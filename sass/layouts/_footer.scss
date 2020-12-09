@@ -1,0 +1,19 @@
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .logofot {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.dark-bg {
+    background-color: var($dark-bg-cl);
+}

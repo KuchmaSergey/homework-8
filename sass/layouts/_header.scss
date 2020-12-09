@@ -1,0 +1,23 @@
+.header-line {
+    border-bottom: 1px solid $header-line;
+    padding-bottom: 24px;
+}
+.header {
+    background-color: var($white-cl);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header .logohed {
+    margin-right: 93px;
+}
+.header .mail-link {
+    margin-right: 50px;
+}
+.header-menu-item:not(:last-child) {
+    margin-right: 50px;
+}

@@ -1,0 +1,59 @@
+.company-icons-item:not(:last-child) {
+    margin-right: 30px;
+}
+.company-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 50px;
+    background-color: var($white-cl);
+}
+.section-clients {
+    padding: 94px 0;
+}
+.section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1,167; 
+    text-align: center;
+}
+.client {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.client-svg {
+    fill: var($social-cl);
+}
+.client-svg4 {
+    width: 80px;
+    height: 42px;
+}
+.client-border:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-box {
+    width: 170px;
+    height: 90px;
+    border: 1px solid var($social-cl);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ &:hover,
+ &:focus {
+    border: 1px solid var($accent-cl)
+ }
+ &:hover .client-svg,
+ &:hover .client-svg,
+ &:focus .client-svg,
+ &:focus .client-svg {
+    fill: var($accent-cl);
+ }
+}
