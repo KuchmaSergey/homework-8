@@ -5,14 +5,13 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 body {
     margin: 0px;
     padding: 0px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: $main-text-cl;
 }
