@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -52,11 +53,29 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -198,10 +217,22 @@ address {
 
 .zadacha {
   font-size: 14px;
-  line-height: 1,144;
+  line-height: 1.144;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media (min-width: 480px) {
+  .zadacha {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .zadacha {
+    text-align: start;
+  }
 }
 
 .text {
@@ -224,6 +255,30 @@ address {
   align-items: center;
 }
 
+@media (min-width: 480px) {
+  .grey-box {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grey-box {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grey-box {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1199px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
 .whatwedo {
   padding-top: 0;
 }
@@ -238,7 +293,7 @@ address {
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: 1,167;
+  line-height: 1.167;
   text-align: center;
 }
 
@@ -328,7 +383,7 @@ address {
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: 1,167;
+  line-height: 1.167;
   text-align: center;
 }
 
@@ -874,7 +929,7 @@ address {
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,187;
+  line-height: 1.187;
   text-align: center;
   color: #212121;
   margin-bottom: 10px;
