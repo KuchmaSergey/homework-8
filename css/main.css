@@ -1,20 +1,3 @@
-:root {
-  --main-text-cl: #757575;
-  --accent-cl: #2196F3;
-  --black-cl: #212121;
-  --white-cl: #FFFFFF;
-  --dark-bg-cl: #2F303A;
-  --grey-bag-cl: #F5F4FA;
-  --social-cl: #AFB1B8;
-  --rgb: rgba(255, 255, 255, 0.6)
-  --join-sircle: rgba(255, 255, 255, 0.1);
-  --bkg-drop: rgba(0, 0, 0, 0.2);
-  --imgoverlay: rgba(47, 48, 58, 0.8);
-  --back-overlay: rgba(33, 150, 243, 0.9);
-  --header-line: #ECECEC;
-  --plcholder: rgba(117, 117, 117, 0.5);
-}
-
 html {
   box-sizing: border-box;
 }
@@ -32,7 +15,7 @@ body {
   font-size: 14px;
   line-height: 1,71;
   letter-spacing: 0.03em;
-  color: var(--main-text-cl);
+  color: #757575;
 }
 
 h1,
@@ -89,7 +72,7 @@ address {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .menu {
@@ -114,21 +97,10 @@ address {
   border-radius: 4px;
 }
 
-.hero-btn {
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  min-width: 200px;
-  padding: 10px 32px;
-  background-color: var(--accent-cl);
-  color: var(--white-cl);
-}
-
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: rgba(33, 150, 243, 0.75);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .btn:active {
@@ -136,11 +108,21 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.hero-btn {
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  padding: 10px 32px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
 .potfolio-btn {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.625;
-  background-color: var(--grey-bag-cl);
+  background-color: #F5F4FA;
 }
 
 .hero-btn .portfolio-btn {
@@ -154,21 +136,21 @@ address {
   letter-spacing: 0.06em;
   min-width: 200px;
   padding: 10px 32px;
-  background-color: var(--accent-cl);
-  color: var(--white-cl);
+  background-color: #2196F3;
+  color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .close-button:hover,
 .close-button:focus {
-  border-color: var(--accent-cl);
+  border-color: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .close-button:hover .closes,
 .close-button:focus .closes {
-  fill: var(--accent-cl);
+  fill: #2196F3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -186,15 +168,14 @@ address {
   text-align: center;
   border-radius: 4px;
   border: none;
-  color: var(--white-cl);
+  color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-connect:hover,
-.btn-connect:focus {
-  background-color: var(--accent-cl);
+.btn-connect:hover, .btn-connect:focus {
+  background-color: #2196F3;
 }
 
 .skills-list {
@@ -236,7 +217,7 @@ address {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--grey-bag-cl);
+  background-color: #F5F4FA;
   margin-bottom: 30px;
   border-radius: 4px;
   justify-content: center;
@@ -280,7 +261,7 @@ address {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .inside-section .whatwedo-item {
@@ -305,7 +286,7 @@ address {
   display: inline-block;
   width: 100%;
   height: 70px;
-  background: var(--imgoverlay);
+  background: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
 }
@@ -319,7 +300,7 @@ address {
 .social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: var(--social-cl);
+  fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -337,7 +318,7 @@ address {
   align-items: center;
   width: 45px;
   height: 50px;
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
 }
 
 .section-clients {
@@ -362,7 +343,7 @@ address {
 }
 
 .client-svg {
-  fill: var(--social-cl);
+  fill: #AFB1B8;
 }
 
 .client-svg4 {
@@ -377,23 +358,22 @@ address {
 .clients-box {
   width: 170px;
   height: 90px;
-  border: 1px solid var(--social-cl);
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients-box:hover,
-.clients-box:focus {
-  border: 1px solid var(--accent-cl);
+.clients-box:hover, .clients-box:focus {
+  border: 1px solid #2196F3;
 }
 
 .clients-box:hover .client-svg,
 .clients-box:hover .client-svg,
 .clients-box:focus .client-svg,
 .clients-box:focus .client-svg {
-  fill: var(--accent-cl);
+  fill: #2196F3;
 }
 
 .modal {
@@ -403,7 +383,7 @@ address {
   padding: 40px;
   top: 50%;
   left: 50%;
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -415,7 +395,7 @@ address {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--black-cl);
+  color: #212121;
   margin-bottom: 12px;
 }
 
@@ -435,7 +415,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bkg-drop);
+  background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
   opacity: 1;
   z-index: 99;
@@ -448,7 +428,7 @@ address {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -512,21 +492,21 @@ address {
   position: absolute;
   width: 18px;
   height: 18px;
-  fill: var(--black-cl);
+  fill: #212121;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .input-poss:focus-within > .nameses {
-  fill: var(--accent-cl);
+  fill: #2196F3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-poss:focus-within > .input-name {
   outline: none;
-  border: 1px solid var(--accent-cl);
+  border: 1px solid #2196F3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -545,12 +525,12 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--plcholder);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .txtarea-wrapper:focus-within > .txtarea {
   outline: none;
-  border: 1px solid var(--accent-cl);
+  border: 1px solid #2196F3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -573,7 +553,7 @@ address {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 2px solid var(--black-cl);
+  border: 2px solid #212121;
   border-radius: 2px;
   background-color: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -585,8 +565,8 @@ address {
   background-origin: border-box;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--accent-cl);
-  border-color: var(--accent-cl);
+  background-color: #2196F3;
+  border-color: #2196F3;
 }
 
 .input-connect {
@@ -600,7 +580,7 @@ address {
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .input-connect::placeholder {
@@ -611,7 +591,7 @@ address {
 
 .yeslink {
   margin-left: 5px;
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .label {
@@ -619,7 +599,7 @@ address {
   font-size: 16px;
   line-height: 1,18;
   text-align: center;
-  color: var(--main-text-cl);
+  color: #757575;
 }
 
 .mail-form {
@@ -657,15 +637,14 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.join-circle:hover, .join-circle:focus {
+  background-color: #2196F3;
+}
+
 .join-icons {
   width: 20px;
   height: 20px;
-  fill: var(--white-cl);
-}
-
-.join-circle:hover,
-.join-circle:focus {
-  background-color: var(--accent-cl);
+  fill: #FFFFFF;
 }
 
 .join-title,
@@ -677,7 +656,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .send-icon {
@@ -686,16 +665,16 @@ address {
   right: 28px;
   width: 24px;
   height: 24px;
-  fill: var(--white-cl);
+  fill: #FFFFFF;
 }
 
 .header-line {
-  border-bottom: 1px solid var(--header-line);
+  border-bottom: 1px solid #ECECEC;
   padding-bottom: 24px;
 }
 
 .header {
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -730,7 +709,7 @@ address {
   font-size: 26px;
   line-height: 1,192;
   letter-spacing: 0.03em;
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .logofot {
@@ -739,15 +718,15 @@ address {
   font-size: 26px;
   line-height: 1,192;
   letter-spacing: 0.03em;
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .logo-first {
-  color: var(--black-cl);
+  color: #212121;
 }
 
 .logo-part {
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .phone {
@@ -758,7 +737,7 @@ address {
   font-size: 14px;
   line-height: 1,144;
   letter-spacing: 0.02em;
-  color: var(--main-text-cl);
+  color: #757575;
 }
 
 .mail {
@@ -769,7 +748,7 @@ address {
   font-size: 14px;
   line-height: 1,144;
   letter-spacing: 0.02em;
-  color: var(--main-text-cl);
+  color: #757575;
 }
 
 .contacts-icon-mail {
@@ -783,18 +762,18 @@ address {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--main-text-cl);
+  fill: #757575;
 }
 
 .link:hover .contacts-icon-mail,
 .link:focus .contacts-icon-mail,
 .link:hover .contacts-icon-phone,
 .link:focus .contacts-icon-phone {
-  fill: var(--accent-cl);
+  fill: #2196F3;
 }
 
 .address {
-  color: var(--white-cl);
+  color: #FFFFFF;
 }
 
 .menu-link {
@@ -802,14 +781,14 @@ address {
   font-size: 14px;
   line-height: 1,144;
   letter-spacing: 0.02em;
-  color: var(--black-cl);
+  color: #212121;
 }
 
 .current::after {
   content: "";
   width: 100%;
   height: 4px;
-  background: var(--accent-cl);
+  background: #2196F3;
   border-radius: 2px;
   position: absolute;
   left: 0;
@@ -817,7 +796,7 @@ address {
 }
 
 .current {
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .menu-item {
@@ -826,15 +805,15 @@ address {
 
 .studio:hover,
 .studio:focus {
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .studio {
-  color: var(--black-cl);
+  color: #212121;
 }
 
 .current {
-  color: var(--accent-cl);
+  color: #2196F3;
 }
 
 .hero {
@@ -852,13 +831,13 @@ address {
 
 .title {
   font-weight: 700;
-  color: var(--black-cl);
+  color: #212121;
 }
 
 .page-title {
   margin-bottom: 30px;
   max-width: 696px;
-  color: var(--white-cl);
+  color: #FFFFFF;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -869,7 +848,7 @@ address {
 }
 
 .team-bg {
-  background-color: var(--grey-bag-cl);
+  background-color: #F5F4FA;
 }
 
 .team-list {
@@ -883,7 +862,7 @@ address {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -897,13 +876,13 @@ address {
   font-size: 16px;
   line-height: 1,187;
   text-align: center;
-  color: var(--black-cl);
+  color: #212121;
   margin-bottom: 10px;
 }
 
 .team-position {
   letter-spacing: 0.03em;
-  color: var(--main-text-cl);
+  color: #757575;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.188;
@@ -914,21 +893,20 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--white-cl);
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle:hover,
-.circle:focus {
-  background-color: var(--accent-cl);
+.circle:hover, .circle:focus {
+  background-color: #2196F3;
 }
 
 .circle:hover .social-icons-svg,
 .circle:focus .social-icons-svg {
-  fill: var(--white-cl);
+  fill: #FFFFFF;
 }
 
 .footer {
@@ -951,7 +929,7 @@ address {
 }
 
 .dark-bg {
-  background-color: var(--dark-bg-cl);
+  background-color: #2F303A;
 }
 
 .potfolio-menu-item:not(:last-child) {
@@ -981,7 +959,7 @@ address {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--white-cl);
+  color: #FFFFFF;
   margin: 24px;
 }
 
@@ -1002,7 +980,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--back-overlay);
+  background-color: rgba(33, 150, 243, 0.9);
   justify-content: center;
   align-items: center;
   transform: translatey(100%);
@@ -1016,7 +994,7 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--black-cl);
+  color: #212121;
 }
 
 .potfolio-menu {
@@ -1048,6 +1026,6 @@ address {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--main-text-cl);
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
     align-items: center;
     width: 45px;
     height: 50px;
-    background-color: var($white-cl);
+    background-color: $white-cl;
 }
 .section-clients {
     padding: 94px 0;
@@ -28,7 +28,7 @@
     letter-spacing: 0.03em;
 }
 .client-svg {
-    fill: var($social-cl);
+    fill: $social-cl;
 }
 .client-svg4 {
     width: 80px;
@@ -40,7 +40,7 @@
 .clients-box {
     width: 170px;
     height: 90px;
-    border: 1px solid var($social-cl);
+    border: 1px solid $social-cl;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -48,12 +48,12 @@
 
  &:hover,
  &:focus {
-    border: 1px solid var($accent-cl)
+    border: 1px solid $accent-cl
  }
  &:hover .client-svg,
  &:hover .client-svg,
  &:focus .client-svg,
  &:focus .client-svg {
-    fill: var($accent-cl);
+    fill: $accent-cl;
  }
 }

@@ -31,13 +31,13 @@
 
  &:hover,
  &:focus {
-  background-color: var($accent-cl);
+  background-color: $accent-cl;
  }
 }
 .join-icons {
     width: 20px;
     height: 20px;
-    fill: var($white-cl);
+    fill: $white-cl;
 }
 
 .join-title,
@@ -49,7 +49,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var($white-cl);
+    color: $white-cl;
 }
 .send-icon {
     position: absolute;
@@ -57,5 +57,5 @@
     right: 28px;
     width: 24px;
     height: 24px;
-    fill: var($white-cl);
+    fill: $white-cl;
 }

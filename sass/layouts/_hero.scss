@@ -17,12 +17,12 @@
   }
   .title {
     font-weight: 700;
-    color: var($black-cl);
+    color: $black-cl;
   }
   .page-title {
     margin-bottom: 30px;
     max-width: 696px;
-    color: var($white-cl);
+    color: $white-cl;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;

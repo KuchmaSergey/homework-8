@@ -1,5 +1,5 @@
 .team-bg {
-    background-color: var($grey-bag-cl);
+    background-color: $grey-bag-cl;
 }
 
 .team-list {
@@ -12,7 +12,7 @@
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
-    background-color: var($white-cl);
+    background-color: $white-cl;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -24,12 +24,12 @@
     font-size: 16px;
     line-height: 1,187;
     text-align: center;
-    color: var($black-cl);
+    color: $black-cl;
     margin-bottom: 10px;    
 }
 .team-position {
     letter-spacing: 0.03em;
-    color: var($main-text-cl);
+    color: $main-text-cl;
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.188;
@@ -39,7 +39,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var($white-cl);
+    background-color: $white-cl;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +47,10 @@
 
  &:hover,
  &:focus {
-    background-color: var($accent-cl);
+    background-color: $accent-cl;
 }
  &:hover .social-icons-svg,
  &:focus .social-icons-svg {
-  fill: var($white-cl);
+  fill: $white-cl;
  }
 }
