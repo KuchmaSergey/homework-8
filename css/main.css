@@ -491,7 +491,7 @@ address {
 .closes {
   width: 11px;
   height: 11px;
-  fill: var(--black);
+  fill: #212121;
 }
 
 .order {
@@ -651,7 +651,7 @@ address {
 .label {
   font-weight: normal;
   font-size: 16px;
-  line-height: 1,18;
+  line-height: 1.18;
   text-align: center;
   color: #757575;
 }
@@ -761,7 +761,7 @@ address {
   font-family: Raleway,sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1,192;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196F3;
 }
@@ -770,7 +770,7 @@ address {
   font-family: Raleway,sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1,192;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196F3;
 }
@@ -789,7 +789,7 @@ address {
   align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,144;
+  line-height: 1.144;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -800,7 +800,7 @@ address {
   align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,144;
+  line-height: 1.144;
   letter-spacing: 0.02em;
   color: #757575;
 }
