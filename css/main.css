@@ -196,6 +196,14 @@ address {
   background-color: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .btn-connect {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -348,7 +356,6 @@ address {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .social-icons-svg {
@@ -360,74 +367,6 @@ address {
 
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.company-icons-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.company-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 50px;
-  background-color: #FFFFFF;
-}
-
-.section-clients {
-  padding: 94px 0;
-}
-
-.section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-}
-
-.client {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.client-svg {
-  fill: #AFB1B8;
-}
-
-.client-svg4 {
-  width: 80px;
-  height: 42px;
-}
-
-.client-border:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-box {
-  width: 170px;
-  height: 90px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.clients-box:hover, .clients-box:focus {
-  border: 1px solid #2196F3;
-}
-
-.clients-box:hover .client-svg,
-.clients-box:hover .client-svg,
-.clients-box:focus .client-svg,
-.clients-box:focus .client-svg {
-  fill: #2196F3;
 }
 
 .modal {
@@ -629,12 +568,25 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 12px;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .input-connect {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input-connect {
+    margin-right: 12px;
+  }
 }
 
 .input-connect::placeholder {
@@ -656,6 +608,12 @@ address {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .join {
+    text-align: center;
+  }
+}
+
 .mail-form {
   background-color: transparent;
   width: 310px;
@@ -667,13 +625,15 @@ address {
   border-radius: 4px;
 }
 
-.connect-form {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 1200px) {
+  .connect-form {
+    display: flex;
+  }
 }
 
 .join-list {
   display: flex;
+  justify-content: center;
 }
 
 .join-item:not(:last-child) {
@@ -711,6 +671,13 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1199px) {
+  .join-title,
+  .connect {
+    text-align: center;
+  }
 }
 
 .send-icon {
@@ -871,12 +838,44 @@ address {
 }
 
 .hero {
-  min-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img.hero.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/studio/hero-img.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (max-width: 479px) {
+  .hero {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/studio/hero-img@2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/studio/hero-img.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/studio/hero-img@2x.png);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/studio/hero-img.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/studio/hero-img@2x.png);
+  }
 }
 
 .hero-content {
@@ -891,14 +890,21 @@ address {
 .page-title {
   margin-bottom: 30px;
   max-width: 696px;
-  color: #FFFFFF;
-  font-size: 44px;
   font-weight: 900;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-right: auto;
   margin-left: auto;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .team-bg {
@@ -906,22 +912,40 @@ address {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team-item {
   margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+  padding-bottom: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.photo-team {
+@media (min-width: 768px) {
+  .team-item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.team-photo {
   margin-bottom: 30px;
 }
 
@@ -963,14 +987,123 @@ address {
   fill: #FFFFFF;
 }
 
+.company-icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.company-icons-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+@media (min-width: 768px) {
+  .company-icons-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .company-icons-item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.company-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.company-icons-link:hover, .company-icons-link:focus {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icons-link:hover .client-svg,
+.company-icons-link:focus .client-svg {
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-clients {
+  padding: 94px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
+
+.client {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.client-svg {
+  fill: #AFB1B8;
+}
+
+.client-svg4 {
+  width: 80px;
+  height: 42px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+  .footer .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper > div:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .addresses {
+    text-align: center;
+  }
 }
 
 .footer .logofot {
