@@ -204,6 +204,14 @@ address {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .btn-connect {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -583,6 +591,16 @@ address {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .input-connect {
+    display: block;
+    margin-bottom: 20px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .input-connect {
     margin-right: 12px;
@@ -628,6 +646,12 @@ address {
 @media (min-width: 1200px) {
   .connect-form {
     display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .connect-form {
+    width: 768px;
   }
 }
 
@@ -940,8 +964,9 @@ address {
 
 @media (min-width: 1200px) {
   .team-item {
-    margin-left: 30px;
-    flex-basis: calc(100% / 6 - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -1084,6 +1109,7 @@ address {
   .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 

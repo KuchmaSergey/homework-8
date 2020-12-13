@@ -2,6 +2,8 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
+
+  
 }
 
 .mail-form {
@@ -15,10 +17,18 @@
   border-radius: 4px;
 }
 
+
+
 .connect-form {
   @include for-size(desktop) {
     display: flex;
   }
+
+  @include for-size(tablet) {
+    width: 768px;
+    
+  }
+  
 }
 
 .join-list {
@@ -63,6 +73,7 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
+
 }
 .send-icon {
   position: absolute;
